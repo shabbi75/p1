@@ -1,0 +1,35 @@
+Overview
+--------
+Follow the instructions below, implement the program and answer the related questions. You have the freedom to select the tools, unless further restricted by the instructions.
+
+Use JavaScript where applicable.
+
+This task should not take more than a few working hours. You can also provide a partial solution if the task turns to be substantially larger.
+
+Result will be used in the evaluation, so please follow software engineering practices as you see the best fit. Please be prepared to defend your solution in the possible interview later on.
+
+Code must be on the substantial parts your own handwriting. You are free to use open source components and public IPR code, but please mark the copyrights clearly.
+
+
+Instructions
+------------
+
+1. Web API server is provided with the assignment that provides the data to use in the assignment.
+
+The Web API server is a python3 program which requires external packages listed in requirements.txt.
+- It should be started by 'python run_api.py'.
+- It uses JSON Web Token authentication (http://jwt.io/).
+- Username is 'ssh' and password 'homework'.
+
+2. Your task is to write a document browser that runs on a browser.
+
+The document browser should preferably contain:
+- user sign in view using API /login,
+- document listing view using API /documents,
+- document text browse view using API /document/<id>/text.
+
+(3. Optionally also implement a search and highlight text using API /document/<id>/text?search=<query>)
+
+4. If you would continue the development of the document browser as a team effort, how can you convince yourself that the parts you have written keep working after other team members develop new features?
+
+5. How would you improve the solution if given more time.

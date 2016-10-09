@@ -1,0 +1,10 @@
+<nav class="navbar navbar-inverse" role="navigation">
+  <div class="navbar-header">
+      <a class="navbar-brand" ui-sref="#">Homework </a>
+  </div>
+  <ul class="nav navbar-nav" ng-repeat='m in vm.listStates'>
+      <li ng-if='m.name && m.name!="detail"'>
+        <a ui-sref="{{m.name}}">{{m.name}}</a>
+      </li>
+  </ul>
+</nav>

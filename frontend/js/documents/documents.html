@@ -1,0 +1,10 @@
+<div class="container" data-ng-controller='DocsCTRL as dc'>
+  <ul class="list-group">
+    <li class="list-group-item"
+    ng-repeat='doc in dc.docsList'>
+      <a ui-sref="detail({id:doc.id, name:doc.name})">
+        {{doc.name}}
+      </a>
+    </li>
+  </ul>
+</div>

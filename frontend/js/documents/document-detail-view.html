@@ -1,0 +1,20 @@
+<div class="container" data-ng-controller='DocsDetailCTRL as ddc'>
+  <form ng-submit='ddc.highlight()'>
+  <label for="inputEmail" class="sr-only">Search Text</label>
+
+  <input type="text"  ng-model='ddc.searchText' class="form-control"  placeholder="Search & Highlight" required autofocus>
+  <br />
+
+  <button class="btn btn-lg btn-primary btn-block"  ng-click='ddc.highlight()' type="button">Search</button>
+
+</form>
+  <h3>File: "{{ddc.name}}" Contents</h3>
+   <center>
+    <span ng-if='ddc.totalMatches' class='green'>Total {{ddc.totalMatches}} match(es) found</span>
+    <span ng-if='ddc.searched && !ddc.totalMatches' class='red'>No matches found</span>
+  </center>
+
+  <div class="panel panel-default">
+    <div class="panel-body" ng-bind-html="ddc.docDetail"></div>
+  </div>
+</div>
